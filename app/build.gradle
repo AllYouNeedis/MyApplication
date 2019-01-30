@@ -12,6 +12,12 @@ android {
             storeFile rootProject.file(keystoreProperties['storeFile'])
             storePassword keystoreProperties['storePassword']
         }
+        secondconfig {
+            keyAlias 'myalias'
+            keyPassword '123456'
+            storeFile file('/home/notebook/AndroidStudioProjects/MyApplication2/keys.jks')
+            storePassword '123456'
+        }
     }
     compileSdkVersion 28
     defaultConfig {
