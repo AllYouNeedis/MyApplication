@@ -4,10 +4,10 @@
 *.ap_
 
 # keystore
-keystore.properties
-key.jks
+# keystore.properties
+# gkey.jks
 
-# files for the dex VM
+# files for the dexg VM
 *.dex
 
 # Java class files
