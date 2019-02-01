@@ -9,11 +9,16 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.crashlytics.android.Crashlytics;
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
+import com.microsoft.appcenter.distribute.Distribute;
+
 //import com.crashlytics.android.ndk.CrashlyticsNdk;
 import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends AppCompatActivity {
-
+    private static final String APP_CENTER_KEY = "4c4d6d0f-6897-4a64-b6de-5755b2b43a27";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        AppCenter.start(getApplication(), "APP_CENTER_KEY",
+                Analytics.class, Crashes.class);
+        AppCenter.start(getApplication(), APP_CENTER_KEY, Distribute.class);
     }
 
     @Override
