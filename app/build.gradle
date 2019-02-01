@@ -30,7 +30,7 @@ android {
     }
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.myapplication2"
+        applicationId "com.example.HerasimauYanApp"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1

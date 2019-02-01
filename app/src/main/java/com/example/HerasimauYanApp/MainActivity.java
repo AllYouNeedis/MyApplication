@@ -1,4 +1,4 @@
-package com.example.myapplication2;
+package com.example.HerasimauYanApp;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.crashlytics.android.Crashlytics;
+import com.example.HerasimauYanApp.R;
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
 import com.microsoft.appcenter.crashes.Crashes;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
         AppCenter.start(getApplication(), "APP_CENTER_KEY",
                 Analytics.class, Crashes.class);
         AppCenter.start(getApplication(), APP_CENTER_KEY, Distribute.class);
