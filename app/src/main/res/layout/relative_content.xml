@@ -15,6 +15,7 @@
         android:layout_width="111dp"
         android:layout_height="143dp"
         android:layout_above="@id/anchor"
+        android:contentDescription="@string/developer_photo_name"
         app:srcCompat="@drawable/developer_photo" />
 
     <TextView
@@ -22,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@id/anchor"
-        android:layout_marginBottom="169dp"
+        android:layout_marginBottom="166dp"
         android:text="@string/developer_name" />
 
     <TextView
@@ -31,6 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/anchor"
         android:layout_marginTop="328dp"
-        android:layout_marginBottom="147dp"
+        android:layout_marginBottom="148dp"
         android:text="@string/github_name" />
+
 </RelativeLayout>

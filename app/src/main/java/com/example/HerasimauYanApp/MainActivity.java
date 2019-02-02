@@ -5,17 +5,18 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+
 import com.crashlytics.android.Crashlytics;
-import com.example.HerasimauYanApp.R;
+
 import com.microsoft.appcenter.AppCenter;
 import com.microsoft.appcenter.analytics.Analytics;
 import com.microsoft.appcenter.crashes.Crashes;
 import com.microsoft.appcenter.distribute.Distribute;
 
-//import com.crashlytics.android.ndk.CrashlyticsNdk;
 import io.fabric.sdk.android.Fabric;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
         AppCenter.start(getApplication(), "APP_CENTER_KEY",
                 Analytics.class, Crashes.class);
         AppCenter.start(getApplication(), APP_CENTER_KEY, Distribute.class);
+
+        final TextView version = findViewById(R.id.version);
+        version.setText(BuildConfig.VERSION_NAME);
     }
 
     @Override
