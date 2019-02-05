@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">My Application2</string>
+    <string name="app_name">HerasimauYanApp</string>
     <string name="action_settings">Settings</string>
+    <string name="developer_name">Herasimau Yan</string>
+    <string name="github_name">Github: AllYouNeedis</string>
+    <string name="developer_photo_name">Herasimau Yan Photo</string>
 </resources>
